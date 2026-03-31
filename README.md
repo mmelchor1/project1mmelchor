@@ -70,7 +70,12 @@ The system tracks the "Time-of-Flight" for each message to analyze network overh
 
 ## 🎥 Execution Video
 Below is a screen recording demonstrating the synchronized startup of the MarketProvider and the subsequent connection of all four worker nodes.
-https://github.com/user-attachments/assets/94e8c268-8149-40a7-b3c7-c8d5981a0ff7
+
+
+https://github.com/user-attachments/assets/4734ec5b-1ed0-4af3-a96c-6efacb8e5766
+
+
+
 ## 📊 Project Outcomes: Test Scenarios
 
 To validate the distributed logic and network resilience, the system was tested against three distinct data profiles. Each test confirms the workers' ability to process independent signals in parallel.
