@@ -71,5 +71,22 @@ The system tracks the "Time-of-Flight" for each message to analyze network overh
 ## 🎥 Execution Video
 Below is a screen recording demonstrating the synchronized startup of the MarketProvider and the subsequent connection of all four worker nodes.
 https://github.com/user-attachments/assets/94e8c268-8149-40a7-b3c7-c8d5981a0ff7
+## 📊 Project Outcomes: Test Scenarios
 
+To validate the distributed logic and network resilience, the system was tested against three distinct data profiles. Each test confirms the workers' ability to process independent signals in parallel.
+
+### **Test Input 1: System Connectivity & Baseline (Normal Market)**
+* **Data Profile:** Standard prices for AAPL, TSLA, and MSFT within normal trading ranges.
+* **Expected Result:** Workers maintain a **NEUTRAL** state.
+* **Outcome:** Verified stable system connectivity. All 4 workers successfully subscribed to the Master and correctly identified a `HOLD` strategy based on the initial thresholds.
+
+### **Test Input 2: Upper-Threshold Logic (High Market)**
+* **Data Profile:** Artificially inflated prices (e.g., AAPL > $151.00).
+* **Expected Result:** Distributed **SELL** signals across all nodes.
+* **Outcome:** Verified threshold accuracy. Every worker node independently triggered a `SELL` action simultaneously, demonstrating zero-drop message propagation.
+
+### **Test Input 3: Lower-Threshold Logic (Market Crash)**
+* **Data Profile:** Significant price drops (e.g., TSLA < $180.00).
+* **Expected Result:** Distributed **BUY** signals across all nodes.
+* **Outcome:** Verified data-driven reactivity. The system pivoted from `SELL` to `BUY` signals in real-time as the input stream changed, confirming the reliability of the ZMQ pipeline.
 
