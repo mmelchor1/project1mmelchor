@@ -95,3 +95,7 @@ To validate the distributed logic and network resilience, the system was tested 
 * **Expected Result:** Distributed **BUY** signals across all nodes.
 * **Outcome:** Verified data-driven reactivity. The system pivoted from `SELL` to `BUY` signals in real-time as the input stream changed, confirming the reliability of the ZMQ pipeline.
 
+## Documentation PDF
+[MelchorMarlenDocumentation.pdf](https://github.com/user-attachments/files/26369326/MelchorMarlenDocumentation.pdf)
+
+
