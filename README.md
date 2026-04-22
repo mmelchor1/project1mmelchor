@@ -72,7 +72,12 @@ The system tracks the "Time-of-Flight" for each message to analyze network overh
 Below is a screen recording demonstrating the synchronized startup of the MarketProvider and the subsequent connection of all four worker nodes.
 
 
-https://github.com/user-attachments/assets/4734ec5b-1ed0-4af3-a96c-6efacb8e5766
+
+https://github.com/user-attachments/assets/75f64cb4-ab7c-4ff5-834e-a278feb6633c
+
+
+
+
 
 
 
